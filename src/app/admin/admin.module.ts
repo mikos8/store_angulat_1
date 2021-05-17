@@ -7,7 +7,7 @@ import { AddPageComponent } from './add-page/add-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EditPageComponent } from './edit-page/edit-page.component';
 import { OrdersPageComponent } from './orders-page/orders-page.component';
-
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
     declarations:[
@@ -20,6 +20,8 @@ import { OrdersPageComponent } from './orders-page/orders-page.component';
     ],
     imports:[
         CommonModule,
+        ReactiveFormsModule,
+        FormsModule,
         RouterModule.forChild([
             {path:'',component:AdminLayoutComponent,children:[
                 {path:'',redirectTo:'/admin/login',pathMatch:'full'},

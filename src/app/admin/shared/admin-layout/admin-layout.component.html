@@ -7,13 +7,18 @@
             <a routerLink="dashboard">dashboard</a>
         </li>
         <li routerLinkActive="active">
+            <a routerLink="add">add</a>
+        </li>
+        <li routerLinkActive="active">
             <a routerLink="orders">orders</a>
         </li>
         <li routerLinkActive="active">
-            <a routerLink="add">add</a>
+            <a routerLink="login">Login</a>
+        </li>
+        <li routerLinkActive="active">
+            <a [routerLink]="['/admin','']">Logout</a>
         </li>
 
-        
     </ul>
     <ul>
         <li routerLinkActive="active">
@@ -21,4 +26,6 @@
         </li>
     </ul>
 </nav>
-<router-outlet></router-outlet>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
