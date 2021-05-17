@@ -1,0 +1,24 @@
+<nav class="navbar bg-dark">
+    <h2>
+        admin panel
+    </h2>
+    <ul>
+        <li routerLinkActive="active">
+            <a routerLink="dashboard">dashboard</a>
+        </li>
+        <li routerLinkActive="active">
+            <a routerLink="orders">orders</a>
+        </li>
+        <li routerLinkActive="active">
+            <a routerLink="add">add</a>
+        </li>
+
+        
+    </ul>
+    <ul>
+        <li routerLinkActive="active">
+            <a [routerLink]="['/']">back</a>
+        </li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>
